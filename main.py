@@ -1,13 +1,9 @@
 import csv
 import os
-import shutil
-import stat
 import time
 import requests
-from radon.raw import analyze
-from pygit2 import clone_repository
 
-headers = {"Authorization": "Bearer fb0898df62c76df6f6ec49f2fade4ac7169b588f "}
+headers = {"Authorization": "Bearer YOUR KEY HERE "}
 
 
 def run_query(json, headers):  # Função que executa uma request pela api graphql
