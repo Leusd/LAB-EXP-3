@@ -3,7 +3,7 @@ import os
 import time
 import requests
 
-headers = {"Authorization": "Bearer 917d0c26fd9aefb359c78d355cfc62c06734661e "}
+headers = {"Authorization": "Bearer YOUR KEY HERE "}
 
 
 def run_query(json, headers):  # Função que executa uma request pela api graphql
