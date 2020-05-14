@@ -3,7 +3,7 @@ import os
 import time
 import requests
 
-headers = {"Authorization": "Bearer f8d9632f6225a190ac5d58756a0c25f72b078937"}
+headers = {"Authorization": "Bearer YOUR KEY HERE"}
 
 
 def run_query(json, headers):  # Função que executa uma request pela api graphql
@@ -77,7 +77,7 @@ nodes = result["data"]["search"]["nodes"]  # separar a string para exibir apenas
 next_page = result["data"]["search"]["pageInfo"]["hasNextPage"]
 
 page = 0
-while next_page and total_pages < 25:
+while next_page and total_pages < 50:
     total_pages += 1
     cursor = result["data"]["search"]["pageInfo"]["endCursor"]
     next_query = query.replace("{AFTER}", ", after: \"%s\"" % cursor)
